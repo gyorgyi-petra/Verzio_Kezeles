@@ -41,17 +41,17 @@ namespace WindowsFormsApp1
             int[] tomb2 = new int[n];
 
 
-            for (int i = 0; i < tomb.Length; i++)
+            for (int i = 0; i < tomb2.Length; i++)
             {
                 Console.WriteLine("Kérem adjon meg az " + i + " egész számot!");
 
-                tomb[i] = Int32.Parse(Console.ReadLine());
+                tomb2[i] = Int32.Parse(Console.ReadLine());
 
 
             }
 
             Console.ReadLine();
-            Console.WriteLine(tomb.Max());
+            Console.WriteLine(tomb2.Max());
 
         }
     }
