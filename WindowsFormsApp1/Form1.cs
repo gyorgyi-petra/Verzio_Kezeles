@@ -20,10 +20,30 @@ namespace WindowsFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            int[] tomb = new int[10];
+            /*  int[] tomb = new int[10];
 
-            for (int i = 0; i < tomb.Length;i++) {
-                Console.WriteLine("Kérem adjon meg az " + i  +  " egész számot!");
+              for (int i = 0; i < tomb.Length;i++) {
+                  Console.WriteLine("Kérem adjon meg az " + i  +  " egész számot!");
+
+                  tomb[i] = Int32.Parse(Console.ReadLine());
+
+
+              }
+
+              Console.ReadLine();
+              Console.WriteLine(tomb.Max());
+
+      */
+
+            Console.WriteLine("Kérem adja meg a tömb méretét! ");
+            int n = Int32.Parse(Console.ReadLine());
+
+            int[] tomb2 = new int[n];
+
+
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                Console.WriteLine("Kérem adjon meg az " + i + " egész számot!");
 
                 tomb[i] = Int32.Parse(Console.ReadLine());
 
@@ -32,7 +52,6 @@ namespace WindowsFormsApp1
 
             Console.ReadLine();
             Console.WriteLine(tomb.Max());
-
 
         }
     }
