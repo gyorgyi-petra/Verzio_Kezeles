@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
               Console.ReadLine();
               Console.WriteLine(tomb.Max());
 
-      */
+      
 
             Console.WriteLine("Kérem adja meg a tömb méretét! ");
             int n = Int32.Parse(Console.ReadLine());
@@ -52,6 +52,28 @@ namespace WindowsFormsApp1
 
             Console.ReadLine();
             Console.WriteLine(tomb2.Max());
+            */
+
+            Console.WriteLine("Kérem adja meg a tömb méretét! ");
+            int m = Int32.Parse(Console.ReadLine());
+
+            int[] tomb3 = new int[m];
+
+
+            for (int i = 0; i < tomb3.Length; i++)
+            {
+                Console.WriteLine("Kérem adjon meg az " + i + " egész számot!");
+
+                tomb3[i] = Int32.Parse(Console.ReadLine());
+
+
+            }
+
+            Console.ReadLine();
+            Console.WriteLine(tomb3.Max());
+            Console.WriteLine(tomb3.Min());
+
+
 
         }
     }
